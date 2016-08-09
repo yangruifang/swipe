@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body, html, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.container {
+  position: relative; }
+
+body {
+  font-size: 10px;
+  background: #F6F6F6; }
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate3d(100%, 0, 0); }
+
+/* 导航按钮 */
+.btn {
+  z-index: 999;
+  position: absolute;
+  width: 10rem;
+  height: 2rem;
+  left: 50%;
+  margin-left: -3rem;
+  bottom: 2rem; }
+  .btn li {
+    width: 1.5rem;
+    height: 1.5rem;
+    float: left;
+    text-align: center; }
+    .btn li:after {
+      content: "";
+      display: inline-block;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 0.5rem; }
+    .btn li.on:after {
+      background: #fff; }
+
+/* 音乐动画 */
+@-webkit-keyframes music {
+  from {
+    -webkit-transform: rotate3d(0, 0, 1, 0); }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg); } }
+/* 音乐按钮 */
+.music {
+  z-index: 999;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: url(../img/music.png) no-repeat;
+  background-size: cover;
+  -webkit-animation: music 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; }
+  .music.music2 {
+    background-position: left bottom; }
+
+/*  header里的a封装函数  */
+/* yindao  */
+.yindao {
+  -webkit-transform: translate3d(0, 0, 0); }
+  .yindao h1 {
+    display: none;
+    color: #fff;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+    font-family: "微软雅黑";
+    font-weight: normal; }
+  .yindao .p1 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/1.png) no-repeat;
+    background-size: cover; }
+    .yindao .p1 h1 {
+      -webkit-animation: fadeInRight 1s; }
+  .yindao .p2 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/2.png) no-repeat;
+    background-size: cover; }
+    .yindao .p2 h1 {
+      -webkit-animation: rubberBand 1s 3; }
+  .yindao .p3 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/3.png) no-repeat;
+    background-size: cover; }
+    .yindao .p3 h1 {
+      -webkit-animation: bounce 1s 2; }
+  .yindao .p4 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/4.png) no-repeat;
+    background-size: cover; }
+    .yindao .p4 h1 {
+      -webkit-animation: rotateInUpLeft 1s 2; }
+    .yindao .p4 a {
+      display: block;
+      width: 8rem;
+      height: 2rem;
+      line-height: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      margin: 9rem auto;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: "微软雅黑"; }
+
+/* loginmain */
+#loginmain {
+  padding: 14px 30px 0 30px; }
+  #loginmain form {
+    width: 100%; }
+    #loginmain form .form_top {
+      border: 1px solid #b2b2b2;
+      border-radius: 10px;
+      margin-bottom: 20px; }
+      #loginmain form .form_top p:nth-of-type(1) {
+        border-bottom: 1px solid #b2b2b2; }
+      #loginmain form .form_top input {
+        width: 100%;
+        height: 41px;
+        background: #f6f6f6;
+        border: none;
+        border-radius: 10px;
+        padding-left: 10px; }
+        #loginmain form .form_top input:focus {
+          outline: none; }
+    #loginmain form .auto {
+      height: 15px;
+      margin-bottom: 20px;
+      position: relative; }
+      #loginmain form .auto .forget {
+        float: right; }
+      #loginmain form .auto label, #loginmain form .auto a {
+        color: #B9B9B9;
+        font-size: 12px;
+        font-family: "微软雅黑"; }
+    #loginmain form .deng {
+      height: 40px; }
+      #loginmain form .deng input {
+        width: 100%;
+        height: 40px;
+        background: #17B0B8;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 6px;
+        color: #fff;
+        border: none;
+        font-size: 17px;
+        font-family: "微软雅黑"; }
+  #loginmain .zhu {
+    margin-bottom: 50px;
+    height: 40px;
+    line-height: 40px;
+    color: #b2b2b2;
+    font-size: 12px;
+    font-family: "微软雅黑"; }
+    #loginmain .zhu a {
+      text-decoration: underline;
+      color: #FF9E23; }
+  #loginmain .else {
+    border-bottom: 1px solid #B2B2B2;
+    padding: 8px 0; }
+    #loginmain .else li {
+      width: 100%;
+      float: left;
+      text-align: center; }
+      #loginmain .else li span {
+        color: #b2b2b2;
+        padding: 0 5px;
+        background: #F6F6F6;
+        font-size: 12px;
+        font-family: "微软雅黑"; }
+  #loginmain .img {
+    margin-top: 20px;
+    width: 100%;
+    height: 49px;
+    text-align: center; }
+    #loginmain .img a {
+      float: left;
+      width: 25%; }
+    #loginmain .img img {
+      width: 50px; }
+
+/* all所有页面 */
+#all {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: 43px;
+  background: #0cc;
+  line-height: 43px;
+  position: relative;
+  border-shadow: 0 2px 2px 1px #24a2a8; }
+  .header a {
+    display: none; }
+  .header h1 {
+    padding: 0 45px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+    .header h1 img {
+      width: 35px;
+      height: 28px;
+      padding-top: 8px;
+      padding-right: 5px; }
+  .header #people {
+    position: absolute;
+    height: 21px;
+    width: 20px;
+    top: 50%;
+    margin-top: -10px;
+    background: url(../images/wode.png) no-repeat;
+    background-size: contain;
+    font-size: 0;
+    left: 10px; }
+  .header #shezhi {
+    position: absolute;
+    height: 21px;
+    width: 20px;
+    top: 50%;
+    margin-top: -10px;
+    background: url(../images/shezhi.png) no-repeat;
+    background-size: contain;
+    font-size: 0;
+    right: 10px; }
+  .header #back {
+    position: absolute;
+    height: 18px;
+    width: 15px;
+    top: 50%;
+    margin-top: -9px;
+    background: url(../images/left1.png) no-repeat;
+    background-size: contain;
+    font-size: 0;
+    left: 10px; }
+  .header #headerlogin {
+    color: #fff;
+    position: absolute;
+    font-size: 14px;
+    top: 50%;
+    margin-top: -18px;
+    right: 10px; }
+  .header #photo {
+    position: absolute;
+    height: 25px;
+    width: 27px;
+    top: 50%;
+    margin-top: -12px;
+    background: url(../images/ri6.png) no-repeat;
+    background-size: contain;
+    font-size: 0;
+    right: 10px; }
+  .header #book {
+    position: absolute;
+    height: 18px;
+    width: 19px;
+    top: 50%;
+    margin-top: -9px;
+    background: url(../images/hotel1.jpg) no-repeat;
+    background-size: contain;
+    font-size: 0;
+    right: 10px; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  -webkit-flex-grow: 1;
+  position: relative; }
+  .main section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate3d(100%, 0, 0); }
+
+/*  我的  */
+#my {
+  background: #fff; }
+  #my .banner {
+    height: 160px;
+    width: 100%; }
+    #my .banner img {
+      width: 100%;
+      height: 153px;
+      max-width: 640px; }
+  #my .zj {
+    line-height: 40px; }
+    #my .zj img:first-of-type {
+      width: 57px;
+      height: 38px;
+      background-size: contain; }
+    #my .zj img:nth-of-type(2) {
+      width: 92px;
+      height: 38px;
+      background-size: contain;
+      float: right; }
+  #my .my_img {
+    width: 100%;
+    background: #fff; }
+    #my .my_img a {
+      display: block;
+      width: 50%;
+      height: 55px;
+      float: left;
+      padding-left: 10px; }
+    #my .my_img img {
+      width: 46px;
+      height: 32px;
+      float: left;
+      padding-right: 10px; }
+    #my .my_img a:last-child {
+      float: right; }
+    #my .my_img small {
+      display: block; }
+
+/*  主页mainpage  */
+#mainpage {
+  background: #f6f6f6;
+  -webkit-transform: translate3d(0, 0, 0);
+  padding: 13px 12px; }
+  #mainpage a {
+    height: 80px;
+    dispaly: block;
+    width: 25%;
+    text-align: center;
+    float: left;
+    border-bottom: 1px solid #ececec; }
+    #mainpage a:not(:nth-child(4n)) {
+      border-right: 1px solid #ececec; }
+  #mainpage img {
+    width: 47px;
+    height: 35px;
+    margin-top: 13px; }
+  #mainpage small {
+    display: block;
+    color: #7F7D7E;
+    line-height: 18px;
+    font-size: 12px;
+    padding-bottom: 10px; }
+  #mainpage .mainbanner {
+    width: 100%;
+    height: 142px;
+    margin-bottom: 10px; }
+    #mainpage .mainbanner img {
+      width: 100%;
+      max-width: 597px;
+      height: 132px; }
+  #mainpage div::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both; }
+  #mainpage p {
+    width: 100%;
+    text-indent: 2em;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    line-height: 16px;
+    color: #333;
+    /*white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;*/ }
+
+/*  订单 */
+#orders ul li {
+  padding: 0 12px;
+  height: 48px;
+  line-height: 45px;
+  border-bottom: 1px solid #cfcfcf;
+  color: #313131;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  position: relative; }
+  #orders ul li img {
+    width: 34px;
+    padding-top: 12px;
+    padding-right: 10px;
+    float: left; }
+  #orders ul li a {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 10px;
+    width: 10px;
+    height: 15px;
+    background: url(../images/ding8.png) no-repeat;
+    background-size: contain;
+    font-size: 0; }
+
+/*  ariy日记  */
+#ariy img {
+  width: 100%;
+  height: 400px; }
+
+#guang {
+  overflow-y: scroll; }
+  #guang #guang_top {
+    width: 100%;
+    height: 38px;
+    background: #dbdbdb;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0 1px 0 1px #ececec;
+    display: -webkit-flex;
+    line-height: 38px; }
+    #guang #guang_top a {
+      text-align: center;
+      display: block;
+      -webkit-flex-grow: 1;
+      color: #4f4f4f; }
+      #guang #guang_top a:not(:last-child) {
+        border-right: 1px solid #f5f5f5; }
+      #guang #guang_top a img {
+        width: 12px;
+        height: 12px;
+        margin-right: 10px; }
+    #guang #guang_top ._color {
+      color: #53ACBE;
+      background: #ededed; }
+  #guang div {
+    display: none;
+    padding: 10px 15px;
+    width: 100%; }
+    #guang div dl dt {
+      width: 35px;
+      height: 35px;
+      float: left;
+      margin-right: 10px; }
+      #guang div dl dt img {
+        width: 35px; }
+    #guang div dl dd {
+      width: 240px;
+      float: left;
+      background: #fff; }
+      #guang div dl dd p {
+        line-height: 20px;
+        color: #333; }
+      #guang div dl dd img {
+        width: 240px; }
+  #guang .hot img {
+    width: 290px; }
+
+/*  hotel酒店分页面  */
+#hotel {
+  padding: 10px; }
+  #hotel a {
+    margin-bottom: 10px; }
+  #hotel dl dt {
+    width: 290px;
+    height: 116px; }
+    #hotel dl dt img {
+      width: 290px; }
+  #hotel dl dd {
+    background: #fcfcfc;
+    padding: 5px 10px;
+    position: relative; }
+    #hotel dl dd h1 {
+      color: #444;
+      font-size: 14px;
+      font-family: "微软雅黑"; }
+    #hotel dl dd p {
+      color: #444;
+      font-size: 12px;
+      font-family: "微软雅黑";
+      width: 210px; }
+    #hotel dl dd span {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 10px;
+      height: 15px;
+      margin-top: -8px;
+      background: url(../images/hotel3.jpg) no-repeat;
+      background-size: contain;
+      font-size: 0; }
+
+/*  shezhi设置 */
+#set {
+  overflow-y: scroll;
+  padding-top: 10px; }
+  #set article {
+    width: 90%;
+    margin: 10px auto;
+    background: white;
+    padding: 10px 0; }
+    #set article p {
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #Ccc; }
+      #set article p label {
+        width: 100px;
+        display: inline-block;
+        padding-left: 10px; }
+      #set article p span {
+        color: orange; }
+  #set p {
+    margin-left: 5%; }
+  #set button {
+    width: 90%;
+    background: orange;
+    color: white;
+    height: 40px;
+    margin-left: 5%;
+    display: block; }
+
+/*   shen身边 */
+#shen {
+  padding: 10px;
+  overflow-y: auto; }
+  #shen .shen a {
+    display: inline-block;
+    width: 33%;
+    height: 30px;
+    background: #DBDBDB;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    color: #333; }
+  #shen .shen .shenbj {
+    background: #eaeaea;
+    color: #f00; }
+  #shen .shen p {
+    width: 280px; }
+
+/*  footer页脚  */
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #2D2D2D;
+  text-align: center;
+  position: relative; }
+  .footer a {
+    width: 20%;
+    float: left;
+    color: #fff;
+    position: relative;
+    z-index: 2; }
+  .footer img {
+    width: 25px;
+    height: 27px;
+    background-size: contain; }
+  .footer small {
+    display: block; }
+
+/*  black黑块  */
+.black {
+  width: 20%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 0 1px 1px #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1; }
+
+/* order_hotel */
+#order_hotel {
+  padding: 10px; }
+  #order_hotel img {
+    width: 300px; }
+
+/*  jingqu */
+#jingqu {
+  padding: 10px; }
+  #jingqu img {
+    width: 300px; }
+
+#my_mine article {
+  width: 90%;
+  margin: 10px auto;
+  background: white;
+  padding: 10px 0; }
+  #my_mine article p {
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #Ccc; }
+    #my_mine article p label {
+      width: 100px;
+      display: inline-block;
+      padding-left: 10px; }
+    #my_mine article p span {
+      color: orange; }
+#my_mine p {
+  margin-left: 5%; }
+#my_mine input {
+  border: none;
+  outline: none; }
+
+/*# sourceMappingURL=tree.css.map */

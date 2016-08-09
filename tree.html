@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<title>风景画面</title>
+	<link rel="stylesheet" href="css/tree.css">
+	<link rel="stylesheet" href="css/animate2.css">
+</head>
+<body>
+	
+	<div class="container" id="container">
+		<!-- 引导页 -->
+		<div class="page yindao" id="yindao">
+			<div class="p1">
+				<h1>欢迎您<br>热爱探索的旅行家</h1>
+			</div>
+			<div class="p2">
+				<h1>记录<br>探索世界的轨迹</h1>
+			</div>
+			<div class="p3">
+				<h1>分享<br>途中的点点滴滴</h1>
+			</div>
+			<div class="p4">
+				<h1>建立<br>你的旅行档案</h1>
+				<a href="#loginmain" id="begin">开始旅行</a>
+			</div>					
+		</div>
+
+		<!-- 所有内容页 -->
+		<div class="page all" id="all">
+			<header class="header">
+				<a href="#" id="back">返回</a>
+				<a href="#my_mine" id="people" data-tit="个人资料">联系人</a>
+				<h1 id="headtitle">登陆</h1>
+				<a href="#set" id="shezhi">设置</a>
+				<a href="#" id="back">返回</a>
+				<a href="#" id="headerlogin">登陆</a>
+				<!-- <span id="span">菜单</span> -->
+				<a href="#" id="photo">相机</a>
+				<a href="#" id="book">书</a>
+			</header>
+			<div class="main">
+				<section id="loginmain">
+					<form action="" method="post">
+						<div class="form_top">
+							<p><input type="text" id="text" placeholder="请输入邮箱/手机号/用户名"></p>
+							<p><input type="password" id="pwd" placeholder="请输入密码"></p>
+						</div>
+						<p class="auto"><input type="checkbox" id="auto"><label for="auto">自动登陆</label>
+						<a href="#" class="forget">忘记密码</a></p>
+						<p class="deng"><input type="button" value="登陆" id="deng"></p>
+					</form>
+					<p class="zhu">您还没有单车旅行的账号吗？<a href="#">立即注册</a>吧！</p>
+					<ul class="else">
+						<li><span>其他方式登录</span></li>
+					</ul>
+					<p class="img">
+						<a href=""><img src="img/qq.png" alt=""></a>
+						<a href=""><img src="img/yi.png" alt=""></a>
+						<a href=""><img src="img/zhi.png" alt=""></a>
+						<a href=""><img src="img/wei.png" alt=""></a>
+					</p>
+				</section>
+				<section id="my">
+					<div class="banner">
+						<img src="images/my2.png" alt="">
+					</div>
+					<div class="zj"><img src="images/my3.png" alt="" class="img1">
+						<img src="images/my4.png" alt="" class="img2"></div>
+					<div class="my_img">
+						<a href="#"><img src="images/my1.png" alt="">收藏<small>120</small></a>
+						<a href="#"><img src="images/my5.png" alt="">喜欢<small>10</small></a>
+						<a href="#"><img src="images/my6.png" alt="">想去<small>12</small></a>
+						<a href="#"><img src="images/my7.png" alt="">关注<small>20</small></a>
+						<a href="#"><img src="images/my8.png" alt="">粉丝<small>10</small></a> 
+					</div>
+				</section>
+				<section id="orders">
+					<div class="iscroll">
+						<ul>
+							<li><img src="images/ding2.png" alt="">酒店订单<a href="#order_hotel" data-tit="酒店订单">right</a></li>
+							<li><img src="images/ding3.png" alt="">送机订单<a href="#" data-tit="送机订单" >right</a></li>
+							<li><img src="images/ding4.png" alt="">团购订单<a href="#" data-tit="团购订单">right</a></li>
+							<li><img src="images/ding5.png" alt="">景区订单<a href="#jingqu" data-tit="景区订单">right</a></li>
+							<li><img src="images/ding6.png" alt="">身边订单<a href="#shen" data-tit="身边订单">right</a></li>
+							<li><img src="images/ding7.png" alt="">车车订单<a href="#" data-tit="车车订单">right</a></li>
+						</ul>
+					</div>
+				</section>
+				<section id="mainpage">
+					<div class="mainapp">
+						<a href="#"><img src="images/sy3.png" alt=""><small>车票</small></a>
+						<a href="#"><img src="images/sy4.png" alt=""><small>特卖</small></a>
+						<a href="#"><img src="images/sy5.png" alt=""><small>热卖</small></a>
+						<a href="#"><img src="images/sy6.png" alt=""><small>汽车</small></a>
+						<a href="#"><img src="images/sy7.png" alt=""><small>团购</small></a>
+						<a href="#"><img src="images/sy8.png" alt=""><small>门票</small></a>
+						<a href="#"><img src="images/sy9.png" alt=""><small>身边</small></a>
+						<a href="#hotel" data-tit="酒店"><img src="images/sy10.png" alt=""><small>酒店</small></a>
+					</div>
+
+					<div class="mainbanner"><img src="images/syb.png" alt=""></div>
+					<p>迪拜永远是最富裕的，拥有世界上第一家七星级酒店，世界最大的滑板车，源源不断的是由和重金属。为迪拜带来了巨大的财富。是最棒的</p>
+				</section>
+				<section id="ariy">
+					<div class="iscroll">
+						<img src="images/rj.jpg" alt="">
+					</div>
+				</section>
+				<section id="guang">
+					<p id="guang_top">
+						<a href="#" class="_color"><img src="images/gg_f.jpg" alt="">附近</a>
+						<a href="#"><img src="images/gg_r2.jpg" alt="">直播</a>
+						<a href="#"><img src="images/gg33.png" alt="">热门</a>
+					</p>
+					<div>
+						<dl>
+							<dt><img src="images/gg4.png" alt=""></dt>	
+							<dd>
+								<p><span>better me</span>在<span>寻找花香谜语</span>途中拍摄了照片</p>
+								<img src="images/fj1_r1_c1.jpg" alt="">
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="images/gg8.png" alt=""></dt>	
+							<dd>
+								<p><span>better me</span>在<span>寻找花香谜语</span>途中拍摄了照片</p>
+								<img src="images/fj1_r3_c1.jpg" alt="">
+							</dd>
+						</dl>
+					</div>
+					<div>
+						<dl>
+							<dt><img src="images/gg_z_r1_c1.jpg" alt=""></dt>	
+							<dd>
+								<p><span>better me</span>在<span>寻找花香谜语</span>途中拍摄了照片</p>
+								<img src="images/fj2_r1_c1.jpg" alt="">
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="images/gg_z_r5_c1.jpg" alt=""></dt>	
+							<dd>
+								<p><span>better me</span>在<span>寻找花香谜语</span>途中拍摄了照片</p>
+								<img src="images/fj2_r3_c2.jpg" alt="">
+							</dd>
+						</dl>
+					</div>
+					<div class="hot">
+						<img src="images/gg_1_r1_c1.jpg" alt="">
+						<img src="images/gg_1_r3_c1.jpg" alt="">
+					</div>
+				</section>
+				<section id="hotel">
+					<div class="iscroll">
+						<a href="#hotel2">
+							<dl>
+								<dt><img src="images/hotel2_r1_c1.jpg" alt=""></dt>
+								<dd><h1>三亚亚龙湾及度假酒店</h1>
+									<p>位于很远的地方做音轨800米的汉安县，能进项其中的乐趣</p>
+									<span href="#">left</span>
+								</dd>
+
+							</dl>
+						</a>
+						<a href="#hotel2">
+							<dl>
+								<dt><img src="images/hotel2_r3_c1.jpg" alt=""></dt>
+								<dd><h1>三亚亚龙湾及度假酒店</h1>
+									<p>位于很远的地方做音轨800米的汉安县，能进项其中的乐趣</p>
+									<span href="#">left</span>
+								</dd>
+
+							</dl>
+						</a>
+					</div>
+				</section>
+				<section id="hotel2">
+					酒店详情页
+				</section>
+				<section id="set">
+					<p>账户设置</p>
+					<article>
+						<p>更改头像</p>
+						<p>推送通知设置</p>
+						<p>链接社交网络</p>
+						<p>清空缓存</p>
+					</article>
+					<article>
+						<p>精品工具应用</p>
+					</article>
+					<article>
+						<p>关于我们</p>
+						<p>检查更新</p>
+						<p>意见反馈</p>
+					</article>
+					<button id="out">退出登录</button>
+
+				</section>
+				<section id="order_hotel">
+					<a href="#hotelContent"><img src="images/jiudian.jpg" alt=""></a>
+				</section>
+				<section id="hotelContent">
+					酒店的详细介绍
+				</section>
+				<section id="jingqu">
+					<img src="images/jingqu.jpg" alt="">
+				</section>
+				<section id="shen">
+					<div class="shen" id="shendd">
+						<a href="#" class="shenbj">身边热门</a>
+						<a href="#">精品推荐</a>
+						<a href="#">城市特色</a>
+					</div>
+					<p><img src="images/shen.jpg" alt=""></p>
+					<p><img src="images/shen2.jpg" alt=""></p>
+					<p><img src="images/shen3.jpg" alt=""></p>
+				</section>
+				<section class='section' id="my_mine">
+					<article>
+						<p><label for="">用户名</label><input type="text" placeholder="梦想实现家"></p>
+						<p><label for="">等&nbsp;级</label><input type="text" placeholder="普通会员"></p>
+						<p><label for="">积&nbsp;分</label><span>20000</span></p>
+					</article>
+					<p>完善个人资料，填写订单省却输入烦恼</p>
+					<article>
+						<p><label for="">姓&nbsp;名</label><input type="text" placeholder="李小四"></p>
+						<p><label for="">性&nbsp;别</label>女</p>
+						<p><label for="">出生日</label>1990.5.18</p>
+						<p><label for="">手机号</label><input type="telphone" placeholder="123*****600"></p>
+						<p><label for="">邮&nbsp;箱</label><input type="email"></p>
+					</article>				
+				</section>
+
+
+			</div>
+			<footer class="footer" id="footer">
+				<nav>
+					<a href="#my" data-tit="我的"><img src="images/ding9.png" alt=""><small>我的</small></a>
+					<a href="#orders"  data-tit="订单"><img src="images/nav_06.png" alt=""><small>订单</small></a>
+					<a href="#mainpage"  data-tit="单车旅行"><img src="images/ding10.png" alt=""><small>主页</small></a>
+					<a href="#ariy"  data-tit="日记"><img src="images/ding11.png" alt=""><small>日记</small></a>
+					<a href="#guang"  data-tit="逛逛"><img src="images/ding12.png" alt=""><small>逛逛</small></a>
+				</nav>
+				<div class="black" id="black"></div>
+			</footer>		
+		</div>
+	
+		<!-- 音乐按钮和导航 -->
+		<div class="music" id="music"><audio src="heart.mp3" autoplay loop id="audio"></audio></div>
+		<ul class="btn" id="btn">
+			<li class="on"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>				
+	</div>
+
+
+	
+	<script src="js/zepto.min.js"></script>
+	<script src="js/trees.js"></script>
+	<script>
+		var music=document.getElementById('music'),
+			audio=document.getElementById("audio"),
+			begin=document.getElementById("begin");
+
+		// 点击音乐按钮的时候 判断audio是否是开始的是==>就暂停   否则==》播放
+		music.addEventListener("click",function(){
+			
+			if(!audio.paused){
+				audio.pause();
+				this.className="music music2";
+				this.style.animation="none";
+			}else{
+				audio.play();
+				this.className="music";
+				this.style.animation="music 2s infinite linear";
+			}
+		},false)
+
+		/*begin.onclick=function(){
+			audio.pause();
+		}*/
+	</script>
+</body>
+</html>
